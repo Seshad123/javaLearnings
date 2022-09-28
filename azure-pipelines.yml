@@ -5,11 +5,6 @@
 
 trigger:
 - master
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
 
 pool:
   vmImage: 'windows-latest'
